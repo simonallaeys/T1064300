@@ -1,0 +1,32 @@
+T-106.4300 Web Software Development Project 2012
+
+Primary features
+===
+- Login/logout and register. Use the Django authentication framework. 
+
+- List all your albums
+
+- Create new albums
+
+- Modify existing albums
+	- Add pages and select the layout of the newly created page - a predefined set of page-layouts is enough. There should be layout options with different numbers of images/captions on the page.
+	- Remove pages
+	- Change images and captions on each page. 
+		- In 4cr versions all images are defined by providing and URL link to the image - images are not uploaded to the server. 
+		- In 5cr course version, a user should be able to upload images to the server from his or her machine.
+	- In 4cr version, all albums can be considered public. In 5cr version, users should be able to specify albums either public or private. However, only the owner of an album should be able to modify it.
+	
+- Use Ajax to browse an album - a whole page should not be updated when a user "turns a page".
+
+
+Features related to integrating 3rd party services 
+===
+If you are implementing a 4 credits course versions, you should select any two from the following list of features. If you are implementing a 5 credits versions, you should select at least three (3).
+
+- Use our payment service to pay orders before accepting them (http://webcourse.cs.hut.fi/payment/). You don't need to implement ordering UI, if you don't implement this feature.
+
+- Allow users to easily post a link to a photo album to Twitter, Google+, or similar service. For private albums, generate a public link that can be used to link to your album when sharing online (with friends, for example).
+
+- Use the Flickr API or some other image service API to allow users to search images when adding images to pages.
+
+- Allow OpenID, Gmail or Facebook login to your system. Before implementing, think what information you get from third party login services and if some extra information is also needed. This is the only feature where you are allowed to use third party apps into your service.
