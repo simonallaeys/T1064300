@@ -2,3 +2,5 @@
 .DS_Store
 
 web_album/settings.py~
+
+web_album/settings.py
