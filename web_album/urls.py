@@ -6,6 +6,7 @@ admin.autodiscover()
 
 #add new views here
 from album.views import index
+from django.contrib.auth.views import login, logout
 
 urlpatterns = patterns('',
 	
@@ -21,4 +22,10 @@ urlpatterns = patterns('',
 	
 	#index
 	(u'^$', index),
+	
+	#login
+    (r'^login/$',  login),
+    
+    #logout
+    (r'^logout/$', logout),
 )
