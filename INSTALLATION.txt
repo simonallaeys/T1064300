@@ -1,0 +1,5 @@
+1. Clone the project
+2. Duplicate web_album/settings_default.py to web_album/settings.py
+	Don't delete web_album/settings_default.py
+	The idea is to have your own settings on your local
+
