@@ -24,8 +24,8 @@ urlpatterns = patterns('',
 	(u'^$', index),
 	
 	#login
-    (r'^login/$',  login),
+    (r'^accounts/login/$',  login),
     
     #logout
-    (r'^logout/$', logout),
+    (r'^accounts/logout/$', logout),
 )

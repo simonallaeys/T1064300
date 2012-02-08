@@ -1,10 +1,26 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta name="ROBOTS" content="ALL" />
+    <meta name="Copyright" content="Aalto University" />
+    <meta name="keywords" content="Web album, images, album, image printing" />
+    <meta name="description" content="Cool web album to upload browse create and share album" />
     <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <script type="text/javascript" src="{% get_static_prefix %}js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="{% get_static_prefix %}js/web_album.js"></script>
+    <link rel="stylesheet" href="{% get_static_prefix %}css/main.css" type="text/css" />
 </head>
 <body>
-    <h1>Group 11</h1>
+	<!--right navi-->
+	<nav>
+		<div id="navLogin"><a href="accounts/login">Login</a></div>
+		<div id="navLogout"><a href="accounts/logout">Logout</a></div>
+	</nav>
+
+    <h1>Web Album - Group 11</h1>
     {% block content %}{% endblock %}
     {% block footer %}
     <hr>
