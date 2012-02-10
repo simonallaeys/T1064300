@@ -1,3 +1,11 @@
+Directory structure
+===
+- album: to be used for all album, image handling
+- static: to store css, js and all static content
+- users: to be used for all user related features
+- templates: to store all templates
+
+
 Dev installation
 ===
 1. Clone the project to your local
@@ -8,6 +16,7 @@ Dev installation
 3. Change DATABASES
 4. Run command: python manage.py syncdb
 5. Start server: python manage.py runserver
+
 
 Production installation
 ===
