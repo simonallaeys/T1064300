@@ -5,7 +5,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 #add new views here
-from album.views import index
+from album.views import main_page
+from users.views import logout_page
 from django.contrib.auth.views import login, logout
 
 urlpatterns = patterns('',
@@ -21,11 +22,12 @@ urlpatterns = patterns('',
 	url(r'^admin/', include(admin.site.urls)),
 	
 	#index
-	(u'^$', index),
+	(u'^$', main_page),
 	
 	#login
-    (r'^accounts/login/$',  login),
+	(r'^login/$', 'django.contrib.auth.views.login'),
     
     #logout
-    (r'^accounts/logout/$', logout),
+	(r'^logout/$', logout_page),
+
 )
