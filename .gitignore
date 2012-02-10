@@ -8,5 +8,3 @@ web_album/settings.py
 web_album/*.pyc
 
 web_album/album/*.pyc
-
-web_album/users/*.pyc
