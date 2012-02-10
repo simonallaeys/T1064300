@@ -6,8 +6,8 @@ admin.autodiscover()
 
 #add new views here
 from album.views import main_page
-from users.views import logout_page
-from django.contrib.auth.views import login
+from users.views import logout_page, register_page
+from django.contrib.auth.views import login, password_reset, password_reset_done, password_reset_confirm, password_reset_complete, password_change, password_change_done
 
 urlpatterns = patterns('',
 	
@@ -28,6 +28,27 @@ urlpatterns = patterns('',
 	(r'^login/$', login),
     
     #logout
-	(r'^logout/$', logout_page)
+	(r'^logout/$', logout_page),
+	
+    #password_reset
+	(r'^password_reset/$', password_reset),
+
+    #password_reset_done
+	(r'^password_reset_done/$', password_reset_done),
+
+    #password_reset_confirm
+	(r'^password_reset_confirm/$', password_reset_confirm),
+
+    #password_reset_complete
+	(r'^password_reset_complete/$', password_reset_complete),
+
+    #password_change
+	(r'^password_change/$', password_change),
+
+    #password_change_done
+	(r'^password_change_done/$', password_change_done),
+	
+	#register
+	(r'^register/$', register_page),
 
 )

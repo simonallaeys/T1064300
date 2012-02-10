@@ -5,6 +5,9 @@ Dev installation
 	Don't delete web_album/settings_default.py
 	The idea is to have your own settings on your local
 
+3. Change DATABASES
+4. Run command: python manage.py syncdb
+5. Start server: python manage.py runserver
 
 Production installation
 ===
