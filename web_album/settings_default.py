@@ -123,7 +123,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'web_album'
 )
 
 # A sample logging configuration. The only tangible logging
@@ -148,5 +147,3 @@ LOGGING = {
         },
     }
 }
-
-AUTH_PROFILE_MODULE = "user.UserProfile"

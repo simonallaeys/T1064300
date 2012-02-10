@@ -16,12 +16,8 @@
 <body>
 	<!--user login/out-->
 	<nav>
-	{% if user.username %}
-		<div id="loggedIn">Welcome {{ user.username }}!</div>
-		<div id="navLogout"><a href="logout">Logout</a></div>
-	{% else %}
-		<div id="navLogin"><a href="login">Login</a></div>	
-	{% endif %}
+		<div id="navLogin"><a href="accounts/login">Login</a></div>
+		<div id="navLogout"><a href="accounts/logout">Logout</a></div>
 	</nav>
 
     <h1>Web Album - Group 11</h1>

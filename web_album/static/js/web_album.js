@@ -4,5 +4,5 @@
  */
 
 $(document).ready(function() {
-   // TODO
+   // put all your jQuery goodness in here.
 });
