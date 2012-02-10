@@ -15,20 +15,25 @@
 </head>
 <body>
 	<!--user login/out-->
+	{% block user %}
 	<nav>
-	{% if user.username %}
+	{% if user.is_authenticated %}
 		<div id="loggedIn">Welcome {{ user.username }}!</div>
-		<div id="navLogout"><a href="logout">Logout</a></div>
+		<div id="navLogout"><a href="/logout">Logout</a></div>
 	{% else %}
-		<div id="navLogin"><a href="login">Login</a></div>	
+		<div id="navLogin"><a href="/login/">Login</a></div>	
 	{% endif %}
 	</nav>
-
+	{% endblock %}
+	
+	{% block mainheader %}
     <h1>Web Album - Group 11</h1>
+	{% endblock %}
+	
     {% block content %}{% endblock %}
     {% block footer %}
     <hr>
-    <p>Footer</p>
+    <p>Aalto University - {% now "Y" %}</p>
     {% endblock %}
 </body>
 </html>
